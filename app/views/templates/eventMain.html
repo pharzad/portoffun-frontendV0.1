@@ -1,0 +1,33 @@
+<div class="container">   
+    <div class="row">
+    
+    <div class="col-md-8 reset">
+        
+        <div class="panel panel-default">
+            
+                <div class="panel-heading">
+                    <h4 style="display: inline-block"> {{item.name}}</h4><div style="display: inline-block; float: right;"><em>{{item.startDate|date}}</em></div>
+                 </div>
+  <div class="panel-body">
+     
+      <div class="row">
+          <p></p>
+      <div class="col-md-4">{{item.atendees|person}}
+    </div>
+      <div class="col-md-3">{{item.rolls|rolls}}
+    </div>
+      <div class="col-md-5">{{item.venue.name}}
+    </div>
+  </div>
+      
+        </div>
+        </div>
+        
+        
+    </div>
+        <div class="col-md-3 " style="background-image: url('images/yeoman.png');height: 120px; background-position: center; background-repeat: no-repeat;">
+    </div>
+
+</div>
+    
+</div>
