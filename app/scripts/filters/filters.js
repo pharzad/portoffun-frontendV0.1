@@ -29,6 +29,8 @@ angular.module('pofFilters', []).filter('person', function ()
 
 	return function (input)
 	{
+            if (!input)
+                return;
             if (input.length===0){
                 return 'No roll availble right now';
             }

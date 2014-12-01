@@ -3,11 +3,11 @@
   <div class="col-sm-6 col-md-4">
       <h2>{{event.name}}</h2>
     <div class="thumbnail">
-      <img data-src="holder.js/300x300" alt="...">
+      <img src="images/yeoman.png" alt="...">
       <div class="caption">
           <accordion>
           <accordion-group heading="{{event.rolls|rolls}}">
-      This content is straight in the template.
+              <div ng-repeat="roll in event.rolls"  style="display:inline-block"><div badge-roll="roll"></div></div>
     </accordion-group>
               
               </accordion>
